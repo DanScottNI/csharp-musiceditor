@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<musicdata>
+    <!--
+    The following games are defined here:
+    - 1943
+    - Bionic Commando
+    - Gun Smoke
+    - Hitler no Fukkatsu - Top Secret
+    - Legendary Wings
+    - Mega Man
+    - Mega Man 2
+    - Pro Yakyuu Satsujin Jiken! (J)
+    - Rockman
+    - Rockman 2
+    - Willow
+    
+    These games need to be double-checked:
+    
+    - Commando (? I don't think this uses the same engine)
+    - Ide Yousuke Meijin no Jissen Mahjong (? I don't think this uses the same engine)
+    - Higemaru Makaijima - Nanatsu no Shima Dai Bouken
+    - Destiny of an Emperor
+    - Section Z
+    - Senjou no Ookami
+    - Tenchi wo Kurau (? I don't think this uses the same engine)
+    - Trojan
+    -->
+    <music name="1943" shortname="1943" tablestart="14a60"/>
+    <music name="Bionic Commando" shortname="bioniccommando" tablestart="30a60" />
+    <music name="Gun Smoke" shortname="gunsmoke" tablestart="18a70" />
+    <music name="Hitler no Fukkatsu - Top Secret" shortname="hitlernofukkatsu" tablestart="30a60" />
+    <music name="Legendary Wings" shortname="legendarywings" tablestart="15a60" />
+    <music name="Mega Man" shortname="megaman" tablestart="11a70" datasize="23E0" />
+    <music name="Mega Man 2" shortname="megaman2" tablestart="30a60" datasize="3588" />
+    <music name="Pro Yakyuu Satsujin Jiken! " shortname="proyakyuu" tablestart="2ca68" />
+    <music name="Rockman" shortname="rockman" tablestart="11a70" datasize="23E0" />
+    <music name="Rockman 2" shortname="rockman2" tablestart="30a60" datasize="3588" />
+    <music name="Willow" shortname="willow" tablestart="a60" />
+    <!--<music name="ideyousuke" tablestart="14a30" />-->
+    <!--<music name="commando" tablestart="710" />-->
+    <!--<music name="destiny" tablestart="20a60" />-->
+    <!--<music name="sectionz" tablestart="4a30" />-->
+    <!--<music name="senjou" tablestart="710" />-->
+    <!--<music name="tenchiwokurau" tablestart="20a60" />-->
+    <!--<music name="trojan" tablestart="1a690" />-->
+    <!--<music name="higemarumakaijima" tablestart="a30" />-->
+</musicdata>

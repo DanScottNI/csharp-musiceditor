@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapcomMusicDisassembler</RootNamespace>
+    <AssemblyName>CapcomMusicDisassembler</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDisassembly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDisassembly.Designer.cs">
+      <DependentUpon>frmDisassembly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainWindow.Designer.cs">
+      <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReassemble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReassemble.Designer.cs">
+      <DependentUpon>frmReassemble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrackDisassembly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrackDisassembly.Designer.cs">
+      <DependentUpon>frmTrackDisassembly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicData.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDisassembly.resx">
+      <DependentUpon>frmDisassembly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainWindow.resx">
+      <DependentUpon>frmMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReassemble.resx">
+      <DependentUpon>frmReassemble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrackDisassembly.resx">
+      <DependentUpon>frmTrackDisassembly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LinqBridge\LinqBridge.csproj">
+      <Project>{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}</Project>
+      <Name>LinqBridge</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ROMClasses\ROMClass\ROMClass.csproj">
+      <Project>{A4137869-2359-4333-8C43-3879E03BF63F}</Project>
+      <Name>ROMClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DisassembleLib\MusicLib.csproj">
+      <Project>{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}</Project>
+      <Name>MusicLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MusicData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

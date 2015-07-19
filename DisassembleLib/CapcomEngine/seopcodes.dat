@@ -1,0 +1,24 @@
+﻿; This information comes from:
+; http://bisqwit.iki.fi/jutut/megamansource/mmmusic2.txt
+; Format of this file is as follows:
+; The file is a comma-delimited text file.
+; The first field is hexadecimal representation of the opcode.
+; The second field is the name of the command, as taken from the above document.
+; The third field is the type of opcode and the length.
+; The length is the number of characters, divided by two.
+; The opcode type values are as follows:
+; A - Address
+; D - Data
+; E - End of data
+0,SFXCMD_SetFrameWaitCount,CCDD
+1,SFXCMD_SetVibratoCtrl,CCDD
+2,SFXCMD_SetDutyCycle,CCDD
+3,SFXCMD_SetVolumeAndEnv,CCDD
+4,SFXCMD_Loop,CCLLAAAA
+5,SFXCMD_SetVibratoBuffer,CCDDDDDDDD
+6,SFXCMD_EndOfData,EE
+80,SFXCMD_Exec_80,CCDD
+81,SFXCMD_SetNotePeriod_1,CCDD
+86,SFXCMD_SetNotePeriod_6,CCDD
+82,SFXCMD_SetNotePeriod_2,CCDD
+83,SFXCMD_SetNotePeriod_3,CCDD

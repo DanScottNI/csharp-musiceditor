@@ -1,0 +1,28 @@
+﻿; This information comes from:
+; http://bisqwit.iki.fi/jutut/megamansource/mmmusic2.txt
+; Format of this file is as follows:
+; The file is a comma-delimited text file.
+; The first field is hexadecimal representation of the opcode.
+; The second field is the name of the command, as taken from the above document.
+; The third field is the type of opcode and the length.
+; The length is the number of characters, divided by two.
+; The opcode type values are as follows:
+; A - Address
+; C - Command
+; D - Data
+; E - End of data
+; V - Vibrato Index Reference
+; L - Loop Counter
+0,MUSCMD_SetSpeed,CCDD
+1,MUSCMD_SetVibratoCtrl,CCDD
+2,MUSCMD_SetDutyCycle,CCDD
+3,MUSCMD_SetVolumeAndEnv,CCDD
+4,MUSCMD_Loop,CCLLAAAA
+5,MUSCMD_SetNoteBaseOffset,CCDD
+6,MUSCMD_PlayNoteExtraLength,CCDD
+7,MUSCMD_SetVolumeCurve,CCDDDD
+8,MUSCMD_SetVibratoIndex,CCVV
+9,MUSCMD_EndOfData,EE
+20,MUSCMD_SetNoteDelay,CC
+21,MUSCMD_SetNoteDelayPlus1,CC
+30,MUSCMD_TripletSpeed,CCDD

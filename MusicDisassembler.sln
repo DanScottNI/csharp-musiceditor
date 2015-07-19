@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicLib", "DisassembleLib\MusicLib.csproj", "{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROMClass", "..\ROMClasses\ROMClass\ROMClass.csproj", "{A4137869-2359-4333-8C43-3879E03BF63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqBridge", "..\LinqBridge\LinqBridge.csproj", "{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapcomMusicDisassembler", "CapcomMusicDisassembler\CapcomMusicDisassembler.csproj", "{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646E7DFC-BA81-46B4-B5F9-F03B1472C90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4137869-2359-4333-8C43-3879E03BF63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4137869-2359-4333-8C43-3879E03BF63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4137869-2359-4333-8C43-3879E03BF63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4137869-2359-4333-8C43-3879E03BF63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CEC46A-688F-4B1B-A202-B2D22B3CEE00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57AFA3A2-D7BE-41A7-BD3A-0D2EB5D627D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
